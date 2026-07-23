@@ -1,0 +1,17 @@
+{
+  "name": "mitchy-kitchen-storefront",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready static storefront for Mitchy Kitchen & Household Abode.",
+  "type": "module",
+  "scripts": {
+    "catalogue:import": "node scripts/apply-catalogue.mjs",
+    "dev": "node --watch server.mjs",
+    "start": "node server.mjs",
+    "check": "node scripts/check.mjs && node scripts/security-check.mjs",
+    "security-check": "node scripts/security-check.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
