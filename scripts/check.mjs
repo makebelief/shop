@@ -34,7 +34,7 @@ if (!appBundle.includes("/brand/mitchy-kitchen-logo.png")) {
   process.exit(1);
 }
 
-if (!appBundle.includes("whatsapp:`254759516056`")) {
+if (!appBundle.includes("whatsapp:`254790461412`")) {
   console.error("The production WhatsApp number is missing from the application.");
   process.exit(1);
 }

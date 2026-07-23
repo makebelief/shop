@@ -27,6 +27,9 @@ for (const product of sourceProducts) {
 
 let bundle = fs.readFileSync(bundlePath, "utf8");
 
+// Keep every WhatsApp ordering and support link on the current business number.
+bundle = bundle.replaceAll("254759516056", "254790461412");
+
 function replaceOnce(source, replacement, label) {
   const matches = bundle.split(source).length - 1;
   if (matches !== 1) {
